@@ -1,4 +1,9 @@
 <?php
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+
+    require 'src/Exception.php';
+    require 'src/PHPMailer.php';
     // Получаем данные из POST-запроса
     $host_email = "veselmikhail04@yandex.ru";
     $name = isset($_POST['name']) ? trim($_POST['name']) : '';
@@ -23,25 +28,19 @@
         $output .= "<p><b>Сообщение:</b> " . $message . "</p>";
     }
 
-
-    $to = $host_email;
-    $subject = 'Заявка с сайта math&matika';
-    $message = $output;
-    $headers = "From: $host_email" . "\r\n" .
-        "Reply-To: $host_email" . "\r\n" .
-        'X-Mailer: PHP/' . phpversion();
+    $mail = new PHPMailer(true);
+    $mail->CharSet = 'UTF-8';
+    $mail->setLanguage('ru', '/ajax/language/');
+    $mail->IsHTML(true);
+    $mail->setFrom($email, $name);
+    $mail->addAddress($host_email);
+    $mail->Subject = "Заявка с сайта math&matika";
+    $mail->Body = "$output";
     
-    $res = mail($to, $subject, $message, $headers);
-    
-    if ($res) {
-        echo "Success";
+    if ($mail->send()) {
+        $message = "success";
     } else {
-        echo "Error";
+        $message ="error";
     }
-    // if ($mail->send()) {
-    //     $message = "success";
-    // } else {
-    //     $message ="error";
-    // }
 
-    // echo $message;
+    echo $message;
