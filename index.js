@@ -1,11 +1,11 @@
-async function sendForm(form) {
+function sendForm(form) {
   const formData = new FormData(form);
   // const inputs = form.querySelectorAll('input')
   // const preloader = document.querySelector('.preloader');
   // const modals = document.querySelectorAll(".modal");
 
   $.ajax({
-      url: "handler.php",
+      url: "https://smartswim.ru/ajax/handler.php",
       type: "POST",
       cache: false,
       data: formData,
@@ -18,7 +18,6 @@ async function sendForm(form) {
           // })
       },
       success: (response) => {
-        console.log(response);
           // preloader.classList.remove("shown")
           // inputs.forEach((input) => {
               // input.disabled = false
@@ -26,6 +25,7 @@ async function sendForm(form) {
               // input.value = ""
           // })
           if (response === "success") {
+            console.log("success");
               // form.classList.contains("modal__form") && closeModal(modals[0]);
               // modals[1].classList.add('modal__active');
               // return true;
@@ -37,6 +37,7 @@ async function sendForm(form) {
       error: (response) => {
           // preloader.classList.remove("shown")
           console.log(`Ошибка ${response.status}`);
+          console.table(response);
           // swal(`Ошибка ${response.status}`, response.statusText, "error")
           // inputs.forEach((input) => {
           //     input.disabled = false
