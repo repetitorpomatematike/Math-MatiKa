@@ -2,7 +2,7 @@
 .promo {
   position: relative;
   padding: 9.25rem 0 7.25rem;
-  background: url('/images/promo.png') no-repeat center center/cover;
+  background: url('images/promo.png') no-repeat center center/cover;
   text-align: center;
 }
 
@@ -37,7 +37,7 @@
 
 /* ABOUT */
 .about {
-  background: url('/images/about.png') no-repeat center center/cover;
+  background: url('images/about.png') no-repeat center center/cover;
 }
 
 .title span {
@@ -88,7 +88,7 @@
 /* ABOUT */
 /* FEATURES */
 .features {
-  background: url('/images/features.png') no-repeat center center/cover;
+  background: url('images/features.png') no-repeat center center/cover;
 }
 
 .featres_text {
@@ -189,7 +189,7 @@
   width: 7.5rem;
   height: 7.5rem;
   user-select: none;
-  background: url("/images/hat.svg") no-repeat center center/contain;
+  background: url("images/hat.svg") no-repeat center center/contain;
   transform: translate(50%, -50%);
   -webkit-transform: translate(50%, -50%);
   -moz-transform: translate(50%, -50%);
@@ -312,7 +312,7 @@
 
 /* REVIEWS */
 .reviews {
-  background: url('/images/reviews.png') no-repeat center center/cover;
+  background: url('images/reviews.png') no-repeat center center/cover;
   --swiper-theme-color: var(--primary);
   --swiper-navigation-sides-offset: -3rem;
 }
