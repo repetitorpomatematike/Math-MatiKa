@@ -113,9 +113,11 @@ $('input[type="tel"]').click(function () {
 
 forms.forEach(form => {
     form.addEventListener("submit", (e) => {
-        e.preventDefault()
+        e.preventDefault();
+        debugger
         const isAllInputsValid = Array.from(form.querySelectorAll(".form__row")).every(item => item.classList.contains("success"));
         if (isAllInputsValid) {
+            debugger
             sendForm(form);
         } else {
             form.querySelectorAll(".form__row input").forEach(input => !input.value && input.parentNode.classList.add("error"))

@@ -135,7 +135,7 @@ textarea:focus {
 }
 
 .form__row.success input {
-  border: 2px solid var(--primary);
+  border: 1px solid green;
 }
 
 a {
@@ -653,6 +653,13 @@ body {
   z-index: 1;
   height: 20px;
   cursor: pointer;
+}
+
+.thank-modal .title {
+  font-size: 1.5rem !important;
+  margin-bottom: 0.5rem !important;
+  font-weight: 300 !important;
+  font-family: "Roboto", sans-serif !important;
 }
 
 .close_modal:hover path,
