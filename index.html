@@ -498,7 +498,7 @@
           </button>
         </div>
       </section>
-      <section class="feedback">
+      <section id="feedback" class="feedback">
         <div class="container">
           <div class="feedback_wrapper">
             <img src="images/form.png" alt="Форма" class="feedback_image" />
@@ -551,7 +551,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <nav class="footer_wrapper">
           <div class="footer_top">
@@ -644,7 +644,7 @@
           </div>
         </nav>
       </div>
-    </footer>
+    </footer> -->
     <div class="modal main-modal">
       <div class="modal__content">
         <div class="close_modal">
@@ -684,6 +684,22 @@
               required
             />
           </div>
+          <div class="select">
+            <div class="select__header">
+              <p>Выберите услугу</p>
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.08004 8.94995L10.6 15.47C11.37 16.24 12.63 16.24 13.4 15.47L19.92 8.94995" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <div class="select__content">
+              <p>1-4 класс</p>
+              <p>1-4 класс</p>
+              <p>1-4 класс</p>
+              <p>1-4 класс</p>
+              <p>1-4 класс</p>
+            </div>
+            <input type="hidden" name="message[Вид услуги]">
+          </div>
           <input type="hidden" name="region" class="region input" />
           <input
             type="hidden"
@@ -710,6 +726,14 @@
     <div class="preloader">
       <img src="images/loading.gif" alt="Отправка данных..." />
     </div>
+    <div class="btn-up btn-up_hide">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+          <circle cx="25" cy="25" r="24.5" stroke="white"></circle>
+          <circle cx="25" cy="25" r="24.5" stroke="var(--primary)"></circle>
+          <path d="M25.7071 11.2929C25.3166 10.9024 24.6834 10.9024 24.2929 11.2929L17.9289 17.6569C17.5384 18.0474 17.5384 18.6805 17.9289 19.0711C18.3195 19.4616 18.9526 19.4616 19.3431 19.0711L25 13.4142L30.6569 19.0711C31.0474 19.4616 31.6805 19.4616 32.0711 19.0711C32.4616 18.6805 32.4616 18.0474 32.0711 17.6569L25.7071 11.2929ZM26 37L26 12H24L24 37H26Z" fill="white"></path>
+          <path d="M25.7071 11.2929C25.3166 10.9024 24.6834 10.9024 24.2929 11.2929L17.9289 17.6569C17.5384 18.0474 17.5384 18.6805 17.9289 19.0711C18.3195 19.4616 18.9526 19.4616 19.3431 19.0711L25 13.4142L30.6569 19.0711C31.0474 19.4616 31.6805 19.4616 32.0711 19.0711C32.4616 18.6805 32.4616 18.0474 32.0711 17.6569L25.7071 11.2929ZM26 37L26 12H24L24 37H26Z" fill="var(--primary)"></path>
+      </svg>
+  </div>
   </body>
   <script src="libs/jquery.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
