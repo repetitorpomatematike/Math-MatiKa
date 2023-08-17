@@ -11,16 +11,12 @@ function sendForm(form) {
       contentType: false,
       processData: false,
       beforeSend: () => {
-        console.log("Отправлено");
           preloader.classList.add("shown")
           inputs.forEach(input => input.disabled = true);
       },
       success: function(response) {
-        console.log(response);
-        
       },
       error: function(error) {
-        console.table(error);
         inputs.forEach((input) => input.disabled = false);
           setTimeout(() => {
             preloader.classList.remove("shown");
