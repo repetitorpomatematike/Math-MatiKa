@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e208bab-d64b-45d6-bea9-20a996aae18d" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/send.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/send.js" afterDir="false" />
+    <list default="true" id="4e208bab-d64b-45d6-bea9-20a996aae18d" name="Changes" comment="add photo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +43,7 @@
       <updated>1691331330432</updated>
       <workItem from="1691331331764" duration="796000" />
       <workItem from="1691341466472" duration="665000" />
-      <workItem from="1692279157678" duration="3251000" />
+      <workItem from="1692279157678" duration="3913000" />
     </task>
     <task id="LOCAL-00001" summary="php to html">
       <created>1691331631687</created>
@@ -74,7 +73,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692299520594</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="work send">
+      <created>1692301534914</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1692301534914</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add photo">
+      <created>1692301839080</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1692301839080</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,6 +109,8 @@
     <MESSAGE value="chang photo" />
     <MESSAGE value="update photo" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="work send" />
+    <MESSAGE value="add photo" />
+    <option name="LAST_COMMIT_MESSAGE" value="add photo" />
   </component>
 </project>
